@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=compact-modal-3">
+    <title>F3sty Device | Premium Tech</title>
+</head>
+<body>
+
+    <button id="theme-toggle" class="theme-toggle" aria-label="Переключить тему">
+        <span class="icon">☀️</span>
+    </button>
+
+    <div class="page-wrapper">
+        <div class="site-topbar">
+            <div class="topbar-inner">
+                <div class="store-info">
+                    <span>📍 Москва, ул. Тверская, 18, ТЦ «Галерея», 2 этаж</span>
+                    <span>🕒 Пн–Сб: 10:00–21:00 · Вс: 11:00–20:00</span>
+                </div>
+                <nav class="top-menu" aria-label="Навигация по сайту">
+                    <a href="index.html#catalog" class="active-page">Каталог</a>
+                    <a href="guarantees.html" class="nav-btn">Гарантии</a>
+                    <a href="prices.html" class="nav-btn">Цены</a>
+                </nav>
+            </div>
+        </div>
+
+        <header class="hero">
+            <div class="animated-bg"></div>
+            <div class="hero-content">
+                <div class="badge">Магазин современной техники</div>
+                <h1>Добро пожаловать в F3sty Device</h1>
+                <p>Подберите смартфон, наушники или планшет с быстрой консультацией, понятными ценами и официальной гарантией.</p>
+            </div>
+        </header>
+
+        <nav id="catalog" class="categories">
+            <div class="categories-glass">
+                <button class="filter-btn active" data-filter="all">Все девайсы</button>
+                <button class="filter-btn" data-filter="phones">Телефоны</button>
+                <button class="filter-btn" data-filter="headphones">Наушники</button>
+                <button class="filter-btn" data-filter="tablets">Планшеты</button>
+                <a class="info-btn" href="guarantees.html">Гарантии</a>
+                <a class="info-btn" href="prices.html">Цены</a>
+            </div>
+        </nav>
+
+        <main id="product-grid" class="grid-container"></main>
+
+        <footer>
+            <div class="footer-glass">
+                <div class="footer-logo">
+                    <span class="logo-icon">F3D</span>
+                </div>
+                <div class="footer-text">
+                    <p>© 2026 F3sty Device: технологии и инновации</p>
+                    <p class="sub-text">Проект подготовлен с использованием открытых источников сети Интернет<br>Все материалы использованы в образовательных целях</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="orderModal" class="modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="close-btn" aria-label="Закрыть окно">&times;</button>
+            <div class="modal-header">
+                <div class="modal-icon-wrapper">
+                    <span class="modal-icon">✨</span>
+                </div>
+                <h2 class="modal-title">Оформление заказа</h2>
+                <p class="modal-subtitle">Оставьте ФИО и номер телефона. Мы свяжемся с вами, уточним модель, комплектацию и удобное время покупки.</p>
+            </div>
+            <div id="formContainer" class="form-container">
+                <div class="input-group">
+                    <input type="text" id="fio" required placeholder="Ваше ФИО">
+                </div>
+                <div class="input-group">
+                    <input type="tel" id="phone" required placeholder="Номер телефона">
+                </div>
+                <button id="submitOrder" class="btn-primary">
+                    <span>Отправить данные</span>
+                    <div class="btn-glow"></div>
+                </button>
+            </div>
+            <div id="successMessage" class="success-message">
+                <div class="success-anim">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                        <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                        <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                    </svg>
+                </div>
+                <h3>Готово!</h3>
+                <p>Ваши контактные данные отправлены. Ожидайте звонка.</p>
+            </div>
+        </div>
+    </div>
+
+    <button id="scrollTopBtn" class="scroll-top" aria-label="Вернуться наверх">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
