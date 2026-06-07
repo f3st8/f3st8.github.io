@@ -2,7 +2,7 @@ const products = [
     // Картинки карточек меняются здесь: замените значение в поле img у нужного товара.
     // У Samsung фото встроено прямо в код, поэтому оно работает даже без папки images.
     { name: "iPhone 15 Pro", category: "phones", price: "от 114 990 ₽", img: "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-1.jpg" },
-    { name: "Samsung Galaxy S24", category: "phones", price: "от 89 990 ₽", img: "images/samsung-galaxy-s24-ultra.jpg" },
+    { name: "Samsung Galaxy S24", category: "phones", price: "от 89 990 ₽", img: "samsung-galaxy-s24-ultra.jpg" },
     { name: "Google Pixel 8", category: "phones", price: "от 72 990 ₽", img: "https://fdn2.gsmarena.com/vv/pics/google/google-pixel-8-1.jpg" },
     { name: "Xiaomi 14", category: "phones", price: "от 64 990 ₽", img: "https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-14-1.jpg" },
     { name: "OnePlus 12", category: "phones", price: "от 69 990 ₽", img: "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-12-1.jpg" },
